@@ -87,7 +87,7 @@ A seguir vamos a describir la secuencia de pasos para ejecutar el sistema localm
 git clone https://github.com/<SU USUÁRIO>/micro-biblioteca.git
 ```
 
-3. También es necesario tener Node.js instalado en su máquina. Se usted no lo tiene, siga las instrucciones para la instalación en esta página [página](https://nodejs.org/en/download/).
+3. También es necesario tener Node.js instalado en su máquina. Si usted no lo tiene, siga las instrucciones para la instalación en esta página [página](https://nodejs.org/en/download/).
 
 4. En un terminal, vaya al directorio en el cual su proyecto fue clonado e instale las dependencias necesarias para la ejecución de los microservicios:
 

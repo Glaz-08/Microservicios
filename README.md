@@ -6,7 +6,7 @@ El ejemplo fue diseñado para ser usado en una  **aula práctica sobre microserv
 
 El objetivo de esta clase es permitir que el alumno tenga un primer contacto con microservicios y con tecnologías normalmente usadas en este tipo de arquitecturas, tales como **Node.js**, **REST**, **gRPC** y **Docker**.
 
-Como nuestro objetivo es didáctico, en la biblioteca virtual se encuentra a la venta solo tres libros, como se ve en la próxima figura, que muestra la interfaz Web del sistema. Además, la operación de compora solo simula la acción del usuario, no efectuando cambios en el stock. Así, los clientes de la biblioteca pueden realizar solo dos operaciones: (1) listar los productos en venta; (2) calcular el flete de envio.
+Como nuestro objetivo es didáctico, en la biblioteca virtual se encuentra a la venta solo tres libros, como se ve en la próxima figura, que muestra la interfaz Web del sistema. Además, la operación de compra solo simula la acción del usuario, no efectuando cambios en el stock. Así, los clientes de la biblioteca pueden realizar solo dos operaciones: (1) listar los productos en venta; (2) calcular el flete de envio.
 
 <p align="center">
     <img width="70%" src="https://github.com/dsanmartins/micro-biblioteca/blob/main/resources/sitioweb.png" />
@@ -67,7 +67,7 @@ El ejemplo a continuación muestra el archivo [.proto](https://github.com/dsanma
     <img width="70%" src="https://github.com/dsanmartins/micro-biblioteca/blob/main/resources/descripcion.png" />
 </p>
 
-En gRPC, los mensajes (ejemplo: `Shippingload`) son formados por un conjunto de campos, tal como en un `struct` del lenguaje C. Todo campo posee un nombre (ejemplo: `cep`) y un tipo (ejemplo: `string`). Además,  todo campo tiene un número entero que funciona como un identificador único para el mismo, en el mensaje (ejemplo: ` = 1`). Este número es usado por la implementación de gRPC para identificar el campo en el formato binário de datos usado por gRPC para comunicación distribuída.
+En gRPC, los mensajes (ejemplo: `ShippingPayload`) son formados por un conjunto de campos, tal como en un `struct` del lenguaje C. Todo campo posee un nombre (ejemplo: `cep`) y un tipo (ejemplo: `string`). Además,  todo campo tiene un número entero que funciona como un identificador único para el mismo, en el mensaje (ejemplo: ` = 1`). Este número es usado por la implementación de gRPC para identificar el campo en el formato binário de datos usado por gRPC para comunicación distribuída.
 
 Archivos .proto son usados para generar **stubs**, que mas que nada son proxies que encapsulan los detalles de comunicación en red, incluyenndo intercambio de mensajes, protocolos, etc. Mas detalles sobre el patrón de diseño Proxy puede ser obtenido en libros de ingeniría de software.
 

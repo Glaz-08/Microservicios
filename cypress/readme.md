@@ -1,12 +1,12 @@
 # Imagem para testes com Cypress
 
-Para gerar uma nova imagem, basta rodar o seguinte comando na raiz do projeto:
+Para generar una nueva imagen, basta correr el siguiente comando en la raiz del proyecto:
 
 ```bash
-docker build -t micro-livraria -f cypress/Dockerfile .
+docker build -t micro-biblioteca -f cypress/Dockerfile .
 ```
 
-Para executar a aplicação completa via Docker
+Para ejecutar la aplicación completa via Docker
 ```bash
-docker run -ti -p 3000:3000 -p 5000:5000 micro-livraria
+docker run -ti -p 3000:3000 -p 5000:5000 micro-biblioteca
 ```
